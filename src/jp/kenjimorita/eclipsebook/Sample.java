@@ -1,4 +1,4 @@
-package jp.tuyano.eclipsebook;
+package jp.kenjimorita.eclipsebook;
 
 
 public class Sample {
