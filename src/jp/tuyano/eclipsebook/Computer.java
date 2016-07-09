@@ -7,26 +7,20 @@ public class Computer {
 		system = os;
 		user = usr;
 	}
-	void printData (){
-		System.out.println("System:" + system + "\tUser Name:" + user);
-	}
-
 }
 
 
 class PersonalComputer extends Computer {
 	int cpu = 0;
-	void installSystem(String os, String usr){
-		system = os;
-		user = usr;
-		cpu = 16;
+	PersonalComputer(String system, String usr, int cpu){
+		super();
+		installSystem(system, usr, cpu);
 	}
-	void installSystem(String os, String usr, int c) {
-		system = os;
+	void installSystem(String system, String usr, int cpu){
+		system = system;
 		user = usr;
-		cpu = c;
+		cpu = cpu;
 	}
-	
 	void printData(){
 		System.out.println("System:" + system + "\tUser Name:" + user + "\tCPU:" + cpu);
 	}
