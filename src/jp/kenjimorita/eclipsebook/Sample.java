@@ -2,15 +2,22 @@ package jp.kenjimorita.eclipsebook;
 
 
 public class Sample {
-
 	public static void main(String[] args) {
-		PersonalComputer pc1 = new PersonalComputer("XP", "toro", 32);
-		PersonalComputer pc2 = new PersonalComputer("XP", "toro", 32);
-		if(pc1.equals(pc2)){
-			System.out.println("System is equel");
-		} else {
-			System.out.println("System is not equel");
+		calc("134");
+	}
+	public static void calc(String str){
+		int n;
+		try {
+			n = Integer.parseInt(str);
+		} catch(Exception ex) {
+			n = 0;
 		}
+		int total = 0;
+		for(int i = 1; i<=n; i++){
+			total += i;
+		}
+		str = Integer.toString(total);
+		System.out.println("total: " + str);
 	}
 }
 
